@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Occam's razor",
+    "aka": "Principle of parsimony",
+    "summary": "Simpler explanations are more likely to be correct; avoid unnecessary or improbable assumptions."
+  },
+  {
+    "id": 2,
+    "name": "Hanlon's razor",
+    "summary": "Never attribute to malice that which can be adequately explained by stupidity."
+  },
+  {
+    "id": 3,
+    "name": "Hitchens' razor",
+    "summary": "What can be asserted without evidence can be dismissed without evidence."
+  },
+  {
+    "id": 4,
+    "name": "Hume's guillotine",
+    "aka": "Hume's law; Is-ought problem",
+    "summary": "What ought to be cannot be deduced from what is. \"If the cause, assigned for any effect, be not sufficient to produce it, we must either reject that cause, or add to it such qualities as will give it a just proportion to the effect.\""
+  },
+  {
+    "id": 5,
+    "name": "Popper's falsifiability principle",
+    "summary": "For a theory to be considered scientific, it must be falsifiable."
+  }
+]
