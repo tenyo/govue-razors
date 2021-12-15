@@ -7,22 +7,17 @@ phases:
      nodejs: 14
   pre_build:
     commands:
-      - go version
-      - npm -v
       - echo "Installing npm deps"
       - cd frontend && npm install
   build:
     commands:
-      - pwd
-      - echo "Build started on $(date) ..."
       - echo "Compiling frontend assets"
       - npm run build && cd ..
       - echo "Compiling Go code"
       - go build
   post_build:
     commands:
-      - echo "Build completed on $(date)"
-      - ls -lah
+      - ls -lah govue-razors
 artifacts:
   files:
     - govue-razors
