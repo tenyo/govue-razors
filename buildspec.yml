@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+   runtime-versions:
+     golang: latest
+     nodejs: 14
+  pre_build:
+    commands:
+      - go version
+      - npm -v
+      - echo "Installing npm deps"
+      - cd frontend && npm install
+  build:
+    commands:
+      - pwd
+      - echo "Build started on $(date) ..."
+      - echo "Compiling frontend assets"
+      - npm run build && cd ..
+      - echo "Compiling Go code"
+      - go build
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+      - ls -lah
+artifacts:
+  files:
+    - govue-razors
