@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: ./govue-razors
+    destination: /tmp
+permissions:
+  - object: /tmp
+    pattern: "govue-razors"
+    owner: root
+    group: root
+    mode: 755
+    type:
+      - file

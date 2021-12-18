@@ -21,3 +21,5 @@ phases:
 artifacts:
   files:
     - govue-razors
+    - appspec.yml
+  discard-paths: yes
