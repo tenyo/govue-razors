@@ -11,3 +11,4 @@ permissions:
     mode: 755
     type:
       - file
+
