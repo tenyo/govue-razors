@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+   runtime-versions:
+     golang: latest
+     nodejs: 14
+  pre_build:
+    commands:
+      - echo "Installing npm deps"
+      - cd frontend && npm install
+  build:
+    commands:
+      - echo "Compiling frontend assets"
+      - npm run build && cd ..
+      - echo "Compiling Go code"
+      - go build
+  post_build:
+    commands:
+      - ls -lah govue-razors
+artifacts:
+  files:
+    - govue-razors
+    - appspec.yml
+  discard-paths: yes
