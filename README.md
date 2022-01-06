@@ -22,7 +22,7 @@ go run . -dev
 ## General Embedded UI Setup in Go
 
   - Create your Go project as usual
-  - Generate a new Vue (2.x) project using the [Vue CLI](https://cli.vuejs.org)
+  - Generate a new Vue project using the [Vue CLI](https://cli.vuejs.org)
 ```
 vue create frontend
 ```

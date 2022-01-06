@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-
 export default {
   name: 'App',
   components: {},
@@ -31,7 +29,7 @@ export default {
       this.id = id
     },
     loadRazors() {
-      Vue.axios.get('/razors')
+      this.axios.get('/razors')
         .then((response) => {
           console.debug(response.data)
           this.razors = response.data
